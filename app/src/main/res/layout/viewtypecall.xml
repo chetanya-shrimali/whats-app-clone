@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/ivImage"
+        android:layout_marginTop="5dp"
+        android:clickable="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_call"
+        android:id="@+id/ivImageCall"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="message"
+        android:id="@+id/tvMessage"
+        android:layout_below="@+id/tvName"
+        android:layout_toEndOf="@+id/ivImage"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/tvName"
+        android:layout_toEndOf="@id/ivImage"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_toEndOf="@id/ivImage"
+        android:layout_marginTop="60dp"
+        android:background="#D3D3D3"
+        android:id="@+id/tvLine"
+        android:clickable="true"/>
+
+</RelativeLayout>
